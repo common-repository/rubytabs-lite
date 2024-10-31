@@ -1,0 +1,234 @@
+{
+    "optsDefault" : {
+        "tagCanvas"     : "div",
+        "nameCanvas"    : "canvas",
+        "nameViewport"  : "viewport",
+        "nameSlide"     : "slide",
+        "nameImageBack" : "imgback",
+        "nameImageLazy" : "img",
+        "nameNav"       : "nav",
+        "namePag"       : "pag",
+        "nameCap"       : "cap",
+        "nameNext"      : "nav-next",
+        "namePrev"      : "nav-prev",
+        "namePlay"      : "playpause",
+        "nameTimer"     : "timer",
+        "nameLayer"     : "layer",
+        "nameOverlay"   : "overlay",
+        "nameDataSlide" : "slide",
+        "nameDataLazy"  : "src",
+
+        "name"          : null,
+        "current"       : "cur",
+        "thumbWrap"     : "thumbitem",
+        "actived"       : "actived",
+        "deactived"     : "deactived",
+        "optionsPlus"   : "tabs",
+        "layout"        : "line",
+        "fx"            : "line",
+        "fxEasing"      : "easeOutCubic",
+        "cssOne"        : "roDeal",
+        "cssTwoOut"     : "slideShortDownOut",
+        "cssTwoIn"      : "pushSoftIn",
+        "cssThreePrev"  : "pullIn",
+        "cssThreeNext"  : "pushIn",
+        "cssEasing"     : null,
+        "imagePosition" : "center",
+        "direction"     : "hor",
+
+        "width"         : null,
+        "height"        : null,
+        "speed"         : 400,
+        "speedHeight"   : 400,
+        "layerSpeed"    : 400,
+        "layerStart"    : 400,
+        "perspective"   : 800,
+        "slot"          : "auto",
+        "stepNav"       : 1,
+        "stepPlay"      : 1,
+        "widthRange"    : null,
+        "padding"       : 0,
+        "margin"        : 30,
+        "widthSlide"    : 1,
+        "heightSlide"   : 1,
+        "idBegin"       : 0,
+        "showBy"        : "all",
+        "showInRange"   : 0,
+        "offsetBy"      : null,
+        "wheel"         : "auto",
+
+        "isCenter"      : true,
+        "isNav"         : false,
+        "isPag"         : true,
+        "isCap"         : false,
+        "isLayerRaUp"   : true,
+        "isSlideshow"   : false,
+        "isSwipe"       : true,
+        "isLoop"        : true,
+        "isAnimRebound" : true,
+        "isKeyboard"    : false,
+        "isOverlay"     : false,
+        "isViewGrabStop": false,
+        "isFullscreen"  : false,
+        "isDeeplinking" : false,
+        "isCookie"      : false,
+
+        "load"          : { "preload"       : 1,
+                            "amountEachLoad": 2,
+                            "isLazy"        : true
+                          },
+
+        "swipe"         : { "isBody"        : true,
+                            "isAutoOnPag"   : true,
+                            "easing"        : "easeOutQuint"
+                          },
+
+        "className"     : { "grab"          : ["grab", "grabbing"],
+                            "swipe"         : ["", "swiping"],
+                            "stop"          : ["stopLeft", "stopRight"]
+                          },
+
+        "fxMathName"    : ["rectMove", "rectRun", "rectSlice",
+                           "rubyFade", "rubyMove", "rubyRun", "rubyScale",
+                           "zigzagRun"
+                          ],
+
+        "pag"           : { "type"          : "tabs",
+                            "width"         : null,
+                            "height"        : null,
+                            "minWidth"      : null,
+                            "minHeight"     : null,
+                            "maxWidth"      : null,
+                            "maxHeight"     : null,
+                            "direction"     : "hor",
+                            "position"      : "begin",
+                            "align"         : "begin",
+                            "speed"         : 300,
+                            "easing"        : "easeOutCubic",
+
+                            "sizeAuto"      : "full",
+                            "typeSizeItem"  : "self",
+
+                            "isItemCurCenterWhenTap" : true,
+                            "isJustifyWhenLarge"     : false,
+                            "isArrow"       : true,
+                            "isTapOnArrow"  : true,
+                            "isMark"        : false,
+                            "sizeMarkTo"    : "border",
+                            "moreClass"     : null,
+                            "widthMinToHor" : 0,
+                            "rangeMinToHor" : 0,
+                            "wheel"         : "auto"
+                          },
+
+        "video"         : { "height"        : 480,
+                            "isBtnPause"    : false,
+                            "isPauseThenRemove" : false
+                          },
+
+        "slideshow"     : { "delay"         : 8000,
+                            "timer"         : "arc",
+                            "isAutoRun"     : true,
+                            "isPlayPause"   : true,
+                            "isTimer"       : true,
+                            "isLoop"        : true,
+                            "isHoverPause"  : false,
+                            "isRunInto"     : false,
+                            "isRandom"      : false
+                          },
+
+        "timerArc"      : { "width"         : null,
+                            "height"        : null,
+                            "fps"           : 30,
+                            "rotate"        : 0,
+
+                            "radius"        : 14,
+                            "weight"        : 4,
+                            "stroke"        : "hsla(0,0%,0%,.6)",
+                            "fill"          : "transparent",
+
+                            "radiusOuter"   : 14,
+                            "weightOuter"   : 2,
+                            "strokeOuter"   : "hsla(0,0%,0%,.1)",
+                            "fillOuter"     : "transparent"
+                          },
+
+        "markup"        : { "loader"        : "<div class='{ns}loader'><svg class='{ns}loader-circular'><circle class='{ns}loader-path' cx='50%' cy='50%' r='20' fill='none' stroke-width='4' stroke-miterlimit='15'/></svg></div>",
+                            "nav"           : "<div class='{ns}nav'><div class='{ns}nav-prev'>prev</div><div class='{ns}nav-next'>next</div></div>",
+                            "navInto"       : "viewport",
+                            "pagInto"       : "code",
+                            "controlInto"     : "code",
+                            "timerInto"     : "control",
+                            "playInto"      : "control"},
+
+        "deeplinking"   : { "prefixDefault" : ["ruby", "slide"],
+                            "prefix"        : null,
+                            "isIDConvert"   : true,
+                            "isOnlyShowID"  : true
+                          },
+
+        "cookie"        : { "name"          : "",
+                            "days"          : 7
+                          },
+
+        "mobile"        : {
+            "speedHeight"   : null,
+            "direction"     : "hor"
+        },
+
+        "fallback"      : {
+            "markup"    : { "loader" : "<div class='{ns}loader {ns}loader-old'>loading</div>" }
+        },
+
+        "isAutoInit"    : false,
+        "isPosReport"   : false,
+        "rev"           : ["erp"]
+    },
+
+
+
+    "optsPlus" : {
+        "tabs"      : {},
+        
+        "slider"    : {
+            "margin"    : 0,
+            "load"      : { "isLazy"    : false },
+            "pag"       : { "type"      : "thumbnail",
+                            "position"  : "end",
+                            "align"     : "center" },
+
+            "coverflow" : { "perspective" : 800,
+                            "space"       : 50,
+                            "rotate"      : 75 },
+
+            "scale"     : { "intensity" : 50 }
+        },
+
+        "carousel"  : {
+            "fx"         : "line",
+            "speed"      : 600,
+            "widthSlide" : 300,
+            "margin"     : 15,
+
+            "isCenter"   : false,
+            "isLoop"     : false,
+            "isPag"      : false,
+            "isNav"      : true,
+
+            "load"       : { "isLazy": false }
+        }
+    },
+
+
+    "skinColor" : {
+            "rt01flat"  : "$idTabs > .rt01tabs .rt01pagitem.rt01cur { background-color: $color; } $idTabs > .rt01tabs.rt01pag-hor.rt01pag-begin { border-bottom-color: $color; } $idTabs > .rt01tabs.rt01pag-hor.rt01pag-end { border-top-color: $color; } $idTabs > .rt01tabs.rt01pag-ver .rt01pagitem.rt01cur { border-bottom-color: $color; } $idTabs.rt01pag-ver.rt01pag-begin > .rt01viewport { border-left-color: $color; } $idTabs.rt01pag-ver.rt01pag-end > .rt01viewport { border-right-color: $color; } $idTabs .rt01tabs.rt01pag-ver.rt01outside.rt01pag-begin { border-right-color: $color; } $idTabs .rt01tabs.rt01pag-ver.rt01outside.rt01pag-end { border-left-color: $color; }",
+
+            "rt01flatbox" : "$idTabs > .rt01tabs .rt01pagitem.rt01cur { background-color: $color; } $idTabs > .rt01tabs.rt01pag-hor.rt01pag-begin { border-bottom-color: $color; } $idTabs > .rt01tabs.rt01pag-hor.rt01pag-end { border-top-color: $color; } $idTabs > .rt01tabs.rt01pag-ver .rt01pagitem.rt01cur { border-bottom-color: $color; } $idTabs.rt01pag-ver.rt01pag-begin > .rt01viewport { border-left-color: $color; } $idTabs.rt01pag-ver.rt01pag-end > .rt01viewport { border-right-color: $color; }",
+                                
+            "rt01round" : "$idTabs > .rt01tabs .rt01pagitem.rt01cur { background-color: $color; }",
+                                
+            "rt01outline" : "$idTabs > .rt01tabs .rt01pagitem.rt01cur:before, $idTabs > .rt01tabs .rt01pagitem.rt01cur:after { background-color: $color; } $idTabs > .rt01tabs .rt01pagitem.rt01cur { border-color: $color !important; }",
+                                
+            "rt01underline" : "$idTabs > .rt01tabs.rt01pag-hor.rt01pag-begin .rt01pagitem.rt01cur { border-bottom-color: $color; } $idTabs > .rt01tabs.rt01pag-hor.rt01pag-end .rt01pagitem.rt01cur { border-top-color: $color; } $idTabs > .rt01tabs.rt01pag-ver .rt01pagitem.rt01cur { border-bottom-color: $color; }"
+    }
+}

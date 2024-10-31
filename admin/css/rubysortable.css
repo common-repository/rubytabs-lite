@@ -1,0 +1,74 @@
+/* ***********************************************************
+   ****************** RUBYSORTABLE CORE **********************
+   *********************************************************** */
+
+
+/**
+ * TONG QUAT
+ */
+.rs20relative { position: relative !important; }
+
+
+
+/**
+ * ITEMS + ZONE DRAG
+ */
+.rs20item          { z-index: 2; }
+.rs20item.rs20cur  { position: absolute !important; z-index: 3; }
+.rs20zone-drag     { cursor: move; }
+
+
+
+/**
+ * HOLDER
+ */
+.rs20holder {
+    border: 1px dashed #aaa;
+    background-color: transparent;
+    vertical-align: top; /* Fixed neu display 'inline-block' */
+
+    -webkit-box-sizing: border-box;
+       -moz-box-sizing: border-box;
+            box-sizing: border-box;
+}
+.rs20holder:after {
+    content: ' ';
+    display: table;
+    clear: both;
+}
+
+
+
+/**
+ * KHI BAT DAU DRAG
+ */
+.rs20dragging {
+    position: relative;     /* Vi tri cua Item so voi Code */
+}
+
+
+
+/**
+ * TRUONG HOP ANIMATE
+ */
+.rs20animate.rs20dragging:after {
+    content: '';
+    display: table;
+    clear: both;
+}
+
+.rs20animate.rs20dragging .rs20item {
+    position: absolute !important;
+
+    -webkit-transition: -webkit-transform .2s;
+       -moz-transition:    -moz-transform .2s;
+            transition:         transform .2s;
+}
+.rs20animate.rs20dragging .rs20holder {
+    position: absolute;
+}
+.rs20animate.rs20dragging .rs20cur {
+    -webkit-transition-duration: 0s;
+       -moz-transition-duration: 0s;
+            transition-duration: 0s;
+}

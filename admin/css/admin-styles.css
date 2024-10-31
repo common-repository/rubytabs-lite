@@ -1,0 +1,2232 @@
+/* **************************************************************************
+   ************************** RUBYTABS ADMIN CUSTOM *************************
+   ************************************************************************** */
+
+
+/**
+ * TONG QUAT
+ */
+
+/* Wrapper */
+.rt03page {
+    padding: 15px 15px 0 0;
+}
+@media only screen and (max-width: 782px) {
+    .rt03page {
+        padding: 10px 10px 0 0;
+    }
+}
+
+
+/* Clear */
+.rt03clear:after {
+    content: ' ';
+    display: table;
+    clear: both;
+}
+
+
+/* Link : loai bo style khong can thiet */
+.rt03page a {
+    -webkit-transition: none;
+            transition: none;
+}
+.rt03page a:focus {
+    -webkit-box-shadow: none;
+            box-shadow: none;
+}
+
+
+/* Style khac */
+.rt03style-block    { width: 100% !important; }
+.rt03style-left     { text-align: left !important; }
+.rt03none           { display: none; }
+.rt03hidden         { visibility: hidden; }
+.rt03sizef-medium   { font-size: 14px !important; }
+.rt03ma-t-30        { margin-top: 30px !important; }
+.rt03ma-b-30        { margin-bottom: 30px !important; }
+.rt03ma-b-50        { margin-bottom: 50px !important; }
+
+
+
+
+
+
+/**
+ * HE THONG COLUMN
+ */
+.rt03row {
+    margin-left: -30px;
+}
+.rt03row:after {
+    content: '';
+    display: table;
+    clear: both;
+}
+
+.rt03col3, .rt03col4, .rt03col6 {
+    float: left;
+    min-height: 1px;
+    padding-left: 30px;
+    -webkit-box-sizing: border-box;
+       -moz-box-sizing: border-box;
+            box-sizing: border-box;
+}
+.rt03col3 { width: 25%; }
+.rt03col4 { width: 33.3%; }
+.rt03col6 { width: 50%; }
+
+@media only screen and (min-width: 1300px) {
+    .rt03col-l-2 { width: 16.6%; }
+    .rt03col-l-3 { width: 25%; }
+    .rt03col-l-4 { width: 33.3%; }
+    .rt03col-l-6 { width: 50%; }
+}
+
+@media only screen and (min-width: 1px) and (max-width: 782px) {
+    .rt03row { margin-left: -20px; }
+    
+    .rt03col3, .rt03col4, .rt03col6 {
+        width: 100%;
+        padding-left: 20px;
+    }
+    
+    .rt03col-s-3  { width: 25%; }
+    .rt03col-s-4  { width: 33.3%; }
+    .rt03col-s-6  { width: 50%; }
+    .rt03col-s-12 { width: 100%; }
+}
+
+@media only screen and (max-width: 479px) {
+    .rt03row { margin-left: -10px; }
+    
+    .rt03col3, .rt03col4, .rt03col6 {
+        padding-left: 10px;
+    }
+
+    .rt03col-xs-4  { width: 33.3; }
+    .rt03col-xs-6  { width: 50%; }
+    .rt03col-xs-12 { width: 100%; }
+}
+
+
+
+
+
+
+
+
+/**
+ * DECO ROWSPACE
+ */
+.rt03deco-rowspace {
+    padding-top: 40px;
+    position: relative;
+    border-top: 1px dashed #ddd;
+}
+.rt03deco-rowspace:before, .rt03deco-rowspace:after {
+    content: '';
+    position: absolute;
+    display: block;
+    width: 10px; height: 1px;
+    top: -1px;
+    background-color: #444;
+}
+.rt03deco-rowspace:before           { left: 0; }
+.rt03deco-rowspace:after            { right: 0; }
+
+
+/* OTHER OPTIONS */
+.rt03container-options .rt03col     { padding-bottom: 50px; }
+.rt03row.rt03deactived              { position: relative; opacity: .2; }
+.rt03row.rt03deactived:after {
+    content: '';
+    position: absolute;
+    display: block;
+    width: 100%; height: 100%;
+    left: 0; top: 0;
+}
+
+
+
+
+
+
+
+/**
+ * RUBYTABS STYLE FLATBOX
+ */
+.rt03flatbox {
+    margin-bottom: 30px;
+}
+.rt03flatbox > .rt01pag {
+    margin-bottom: 0 !important;
+    background-color: transparent;
+    border-radius: 4px 4px 0 0;
+}
+.rt03flatbox > .rt01pag > .rt01paginner > .rt01pagitem {
+    padding: 20px 30px;
+    border-radius: 4px 4px 0 0;
+    color: #999;
+    font-size: 1.2em;
+    line-height: 1em;
+    letter-spacing: 1px;
+}
+.rt03flatbox > .rt01pag > .rt01paginner > .rt01pagitem.rt01cur {
+    background-color: #fff;
+    color: #444;
+}
+.rt03flatbox > .rt01viewport {
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 0 0 4px 4px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/**
+ * HEADER LOGO + NAVIGATION
+ */
+.rt03part-header {
+    background-color: #cc0055;
+    border-radius: 4px;
+}
+.rt03logo {
+    float: left;
+    width: 48px; height: 48px;
+    padding: 7px 15px;
+    background: url(../imgs/logo.svg) no-repeat transparent center center;
+    text-indent: -9999px;
+}
+
+
+/* Button link toi Tabs editor */
+.rt03nav-header {
+    float: left;
+    margin-bottom: 0 !important;
+}
+.rt03nav-header .rt03btn-header {
+    float: left;
+    height: 48px;
+    padding: 7px 30px;
+    color: #fff;
+    text-align: center;
+    font-size: 9px;
+    letter-spacing: 2px;
+    cursor: pointer;
+}
+.rt03nav-header .rt03btn-header:hover   { background-color: #990044; }
+.rt03nav-header .rt03btn-header.rt01cur { background-color: #551133; }
+
+.rt03nav-header .rt03icon {
+    display: block;
+    width: 32px; height: 32px;
+    margin: 0 auto 2px auto;
+    background: url(../imgs/nav-main.svg) no-repeat;
+}
+.rt03nav-header .rt03goto-alltabs .rt03icon   { background-position: -9px -9px; }
+.rt03nav-header .rt03goto-tabs .rt03icon      { background-position: -59px -9px; }
+.rt03nav-header .rt03goto-slide .rt03icon     { background-position: -109px -9px; }
+
+
+@media only screen and (max-width: 599px) {
+    .rt03logo {
+        display: none;
+    }
+    .rt03nav-header .rt03btn-header {
+        padding-left: 15px; padding-right: 15px;
+    }
+}
+
+@media only screen and (max-width: 459px) {
+    .rt03btn-donate {
+        display: none;
+    }
+}
+
+
+
+
+
+
+
+/**
+ * NAVIGATION
+ */
+.rt03nav {
+    display: inline-block;
+    position: relative;
+    margin-left: 30px;
+    padding-left: 12px;
+}
+.rt03nav:before {
+    content: '';
+    display: block;
+    position: absolute;
+    height: 30px;
+    left: 0; top: 4px;
+    border-left: 1px dotted #ddd;
+}
+.rt03nav-btn {
+    display: block;
+    padding: 8px 13px;
+    background: no-repeat 0 -5px;
+    cursor: pointer;
+}
+.rt03nav-btn:first-child {
+    margin-left: 0;
+}
+
+
+
+
+
+
+
+/**
+ * BUTTON AJAX
+ */
+.rt03btn-ajax-tabs {
+    position: relative;
+    overflow: hidden;
+}
+.rt03btn-ajax-first, .rt03btn-ajax-last {
+    display: inline-block;
+    vertical-align: middle;
+    -webkit-transition: -webkit-transform .2s, opacity .2s;
+            transition:         transform .2s, opacity .2s;
+}
+.rt03btn-ajax-first > * {
+    vertical-align: middle;
+}
+.rt03btn-ajax-tabs .rt03btn-ajax-first {
+    opacity: 1;
+    -webkit-transform: scale(1);
+            transform: scale(1);
+}
+.rt03btn-ajax-tabs .rt03btn-ajax-last {
+    position: absolute;
+    top: 0; left: 0;
+    width: 100%;
+    text-align: center;
+    visibility: hidden;
+    opacity: 0;
+    z-index: -1;
+    -webkit-transform: scale(4);
+            transform: scale(4);
+}
+.rt03btn-ajax-tabs.rt03actived {
+    position: relative;
+    overflow: hidden;
+    opacity: 1;
+}
+.rt03btn-ajax-tabs.rt03actived > .rt03btn-ajax-first {
+    opacity: 0;
+    -webkit-transform: scale(0.5);
+            transform: scale(0.5);
+}
+.rt03btn-ajax-tabs.rt03actived > .rt03btn-ajax-last {
+    visibility: visible;
+    opacity: 1;
+    z-index: 1;
+    -webkit-transform: scale(1);
+            transform: scale(1);
+}
+
+
+
+
+
+
+
+
+
+
+/**
+ * BUTTON STYLE
+ */
+
+/* Button chung */
+.rt03btn {
+    display: inline-block;
+    padding: 15px 30px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    color: #333;
+    font-size: 14px;
+    line-height: 24px; height: 24px;
+    font-weight: 300;
+    text-decoration: none;
+    letter-spacing: 1px;
+    cursor: pointer;
+
+    -webkit-transition: background-color .2s, border-color .2s, color .2s;
+            transition: background-color .2s, border-color .2s, color .2s;
+}
+.rt03btn:hover {
+    background-color: #cc0055;
+    border-color: #cc0055;
+    color: #fff;
+}
+.rt03btn:focus {
+    box-shadow: none;
+}
+
+.rt03btn2 {
+    display: inline-block;
+    padding: 12px 20px;
+    text-decoration: none;
+    cursor: pointer;
+}
+.rt03btn3 {
+    float: left;
+    padding: 15px 20px;
+    text-decoration: none;
+    line-height: 24px;
+    cursor: pointer;
+}
+.rt03btn-footer {
+    float: left;
+    padding: 15px 20px;
+    text-decoration: none;
+    font-size: 13px;
+    line-height: 24px; height: 24px;
+    cursor: pointer;
+}
+
+.rt03btn-confirm {
+    padding: 10px 20px;
+    margin: 10px;
+    border: 1px solid transparent;
+    border-radius: 4px;
+    font-size: 21px;
+    line-height: 48px;
+    height: 48px;
+    font-weight: 300;
+}
+.rt03btn-confirm > * {
+    vertical-align: middle;
+}
+.rt03btn-confirm i {
+    margin-right: 20px;
+}
+
+
+
+
+
+
+
+
+
+
+/**
+ * BUTTON DONATE
+ */
+a.rt03btn-donate {
+    float: right;
+    height: 48px;
+    padding: 7px 20px;
+    border-radius: 0 4px 4px 0;
+    color: #fff;
+    text-align: center;
+    text-decoration: none;
+    font-size: 9px;
+    letter-spacing: 2px;
+    cursor: pointer;
+}
+a.rt03btn-donate:hover {
+    background-color: #01aa00;
+    color: #fff;
+}
+.rt03btn-donate .rt03icon {
+    display: block;
+    width: 32px; height: 32px;
+    margin: 2px auto 0px auto;
+    background: url(../imgs/nav-main.svg) no-repeat -159px -9px;
+}
+
+
+
+
+
+
+
+
+
+
+
+/**
+ * ICONS
+ */
+
+/* ICON 16 */
+[class*='rt03i16'] {
+    display: inline-block;
+    width: 18px; height: 18px;
+}
+
+[class*='rt03i16'] {
+    background: url(../imgs/icon16-control.svg) no-repeat -16px -16px;
+}
+
+
+
+
+
+
+
+
+/* ICON 48 */
+[class*='rt03i48'] {
+    display: inline-block;
+    width: 48px; height: 48px;
+}
+
+
+/**
+ * ICON 48 - HIEU UNG
+ */
+[class*='rt03i48-fx'] {
+    background: url(../imgs/icon-fx.svg) no-repeat -1px -1px;
+}
+.rt03i48-fx-none { background-position: -1px -1px; }
+.rt03i48-fx-line { background-position: -51px -1px; }
+.rt03i48-fx-fade { background-position: -101px -1px; }
+
+
+
+/**
+ * ICON 48 - VI TRI
+ */
+[class*='rt03i48-pos'] {
+    background: url(../imgs/icon-position.svg) no-repeat -1px -1px;
+}
+.rt03i48-pos-hor            { background-position: -1px -1px; }
+.rt03i48-pos-ver            { background-position: -1px -51px; }
+.rt03i48-pos-pos-begin      { background-position: -51px -1px; }
+.rt03i48-pos-pos-end        { background-position: -101px -1px; }
+.rt03i48-pos-align-begin    { background-position: -151px -1px; }
+.rt03i48-pos-align-center   { background-position: -201px -1px; }
+.rt03i48-pos-align-end      { background-position: -251px -1px; }
+.rt03i48-pos-align-justify  { background-position: -301px -1px; }
+
+
+
+/**
+ * ICON 48 - KHAC
+ */
+[class*='rt03i48-other'] {
+    background: url(../imgs/icon-other.svg) no-repeat -1px -1px;
+}
+.rt03i48-other-none         { background-position: -1px -1px; }
+.rt03i48-other-no           { background-position: -51px -1px; }
+.rt03i48-other-yes          { background-position: -101px -1px; }
+
+.rt03i48-other-flat         { background-position: -1px -51px; }
+.rt03i48-other-outline      { background-position: -51px -51px; }
+.rt03i48-other-round        { background-position: -101px -51px; }
+.rt03i48-other-underline    { background-position: -151px -51px; }
+
+.rt03i48-other-small        { background-position: -1px -101px; }
+.rt03i48-other-normal       { background-position: -51px -101px; }
+.rt03i48-other-large        { background-position: -101px -101px; }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/**
+ * TRANG EDITOR ALL-TABS
+ */
+
+/**
+ * NAVIGATION ALL-TABS
+ */
+.rt03nav-alltabs {
+    margin-top: 5px;
+    background-color: #fff;
+    border-radius: 4px;
+}
+.rt03nav-alltabs:after {
+    content: '';
+    display: table;
+    clear: both;
+}
+.rt03nav-alltabs > * {
+    vertical-align: middle;
+}
+
+/* Icon trong button navigation alltabs */
+.rt03nav-alltabs .rt03icon {
+    display: block;
+    float: left;
+    width: 24px; height: 24px;
+    padding-right: 5px;
+    background: url(../imgs/nav-alltabs.svg) no-repeat;
+}
+.rt03tabs-new .rt03icon        { background-position: -13px -13px; }
+.rt03control-delete .rt03icon  { background-position: -63px -13px; }
+.rt03control-imex .rt03icon    { background-position: -113px -13px; }
+
+.rt03tabs-new:hover .rt03icon               { background-position: -13px -63px; }
+.rt03control-delete:hover .rt03icon,
+.rt03control-delete.rt03actived .rt03icon   { background-position: -63px -63px; }
+.rt03control-imex:hover .rt03icon,
+.rt03control-imex.rt03actived .rt03icon     { background-position: -113px -63px; }
+
+
+/* Button tao tabs moi */
+.rt03tabs-new {
+    border-radius: 4px 0 0 4px;
+    color: #0099dd;
+}
+.rt03tabs-new:hover {
+    background-color: #0099dd;
+    color: #fff;
+}
+
+
+/* Butotn control delete */
+a.rt03control-delete {
+    position: relative;
+    color: #dd0000;
+}
+.rt03control-delete:hover {
+    background-color: #dd0000;
+    color: #fff;
+}
+.rt03control-delete.rt03actived {
+    background-color: #bb0000;
+    color: #fff;
+}
+
+
+.rt03delete-selectall {
+    visibility: hidden;
+    display: block;
+    position: absolute;
+    left: 100%; top: 0;
+    padding: 15px 20px;
+    background-color: #0099dd;
+    color: #fff;
+    white-space: nowrap;
+    text-decoration: none;
+    -webkit-transform: scale(.01);
+            transform: scale(.01);
+    -webkit-transition: -webkit-transform .2s, opacity .2s;
+            transition:         transform .2s, opacity .2s;
+}
+.rt03control-delete.rt03actived > .rt03delete-selectall {
+    visibility: visible;
+    -webkit-transform: scale(1);
+            transform: scale(1);
+}
+.rt03delete-selectall.rt03actived {
+    background-color: #006699;
+}
+
+
+/* Button control import export */
+.rt03control-imex {
+    color: #01bb00;
+}
+.rt03control-imex:hover {
+    background-color: #01bb00;
+    color: #fff;
+}
+.rt03control-imex.rt03actived {
+    background-color: #019000;
+    color: #fff;
+}
+
+
+
+
+
+
+
+
+
+
+/**
+ * GALLERY ITEMS
+ */
+.rt03tl-item {
+    position: relative;
+    margin-bottom: 30px;
+    -webkit-transition: -webkit-transform .2s;
+            transition:         transform .2s;
+    -webkit-transform: scale(1);
+            transform: scale(1);
+}
+.rt03tl-front {
+    overflow: hidden;
+    background-color: #fff;
+    border: 1px solid #aaa;
+    border-radius: 4px;
+    cursor: pointer;
+}
+a.rt03tl-name {
+    overflow: hidden;
+    display: block;
+    height: 85px;
+    padding: 10px 15px;
+    color: #444;
+    font-size: 1.3em;
+    line-height: 1.3em;
+    font-weight: 300;
+    text-decoration: none;
+}
+.rt03tl-info {
+    padding: 7px 10px 4px 10px;
+    background-color: #f5f5f5;
+    font-size: 11px;
+    color: #ccc;
+}
+.rt03tl-info > * {
+    vertical-align: top;
+}
+.rt03tl-id {
+    padding-right: 7px;
+    margin-right: 4px;
+    border-right: 1px dotted #ccc;
+}
+.rt03tl-duplicate {
+    display: none;
+    padding: 8px 15px;
+}
+
+.rt03tl-front:hover             { border-color: #cc0055; }
+.rt03tl-front:hover .rt03tl-id  { border-right-color: #777; }
+.rt03tl-front:hover .rt03tl-info {
+    background-color: #e5e5e5;
+    color: #333;
+}
+
+
+
+/* Tabs item current */
+.rt03tl-item.rt03cur .rt03tl-front  { border-color: #cc0055; }
+.rt03tl-item:hover   .rt03tl-name     { color: #cc0055; }
+.rt03tl-item.rt03cur .rt03tl-info   { background-color: #cc0055; color: #fff; }
+.rt03tl-item.rt03cur .rt03tl-id     { border-color: #fff; }
+.rt03tl-item.rt03cur .rt03tl-name   { color: #cc0055; }
+
+
+
+/* Button Item select */
+.rt03tl-select {
+    display: none;
+    position: absolute;
+    width: 100%; height: 100%;
+    left: 0; top: 0;
+    cursor: pointer;
+    z-index: 3;
+}
+.rt03tl-select:after {
+    content: '';
+    display: block;
+    position: absolute;
+    right: -8px; top: -8px;
+    width: 25px; height: 25px;
+    border-radius: 50%;
+}
+
+
+
+/* Animation keyframes */
+@-webkit-keyframes shakeLittle {
+    0%, 100% { -webkit-transform: translate(0, 0) rotate(0); }
+    10% { -webkit-transform: translate(-1px, -1px) rotate(-1deg); }
+    20% { -webkit-transform: translate(0, -1px) rotate(-1deg); }
+    30% { -webkit-transform: translate(-1px, -1px) rotate(0); }
+    40% { -webkit-transform: translate(0, 0) rotate(0); }
+    50% { -webkit-transform: translate(0, -1px) rotate(-1deg); }
+    60% { -webkit-transform: translate(-1px, 0) rotate(-1deg); }
+    70% { -webkit-transform: translate(0, 0) rotate(-1deg); }
+    80% { -webkit-transform: translate(-1px, 0) rotate(0); }
+    90% { -webkit-transform: translate(0, -1px) rotate(-1deg); }
+}
+@keyframes shakeLittle {
+    0%, 100% { transform: translate(0, 0) rotate(0); }
+    10% { transform: translate(-1px, -1px) rotate(-1deg); }
+    20% { transform: translate(0, -1px) rotate(-1deg); }
+    30% { transform: translate(-1px, -1px) rotate(0); }
+    40% { transform: translate(0, 0) rotate(0); }
+    50% { transform: translate(0, -1px) rotate(-1deg); }
+    60% { transform: translate(-1px, 0) rotate(-1deg); }
+    70% { transform: translate(0, 0) rotate(-1deg); }
+    80% { transform: translate(-1px, 0) rotate(0); }
+    90% { transform: translate(0, -1px) rotate(-1deg); }
+}
+
+
+
+/* Actived delete */
+.rt03actived-delete .rt03tabs-new, .rt03actived-delete .rt03control-imex {
+    visibility: hidden;
+}
+.rt03actived-delete .rt03tl-front {
+    border-color: #aaa;
+    -webkit-animation: shakeLittle .75s infinite ease-in-out;
+            animation: shakeLittle .75s infinite ease-in-out;
+}
+.rt03actived-delete .rt03tl-select {
+    display: block;
+}
+.rt03actived-delete .rt03tl-select:after {
+    border: 1px solid #e00;
+    background: #fff url(../imgs/icons/icons-16.png) no-repeat -163px -163px;
+}
+
+
+
+/* Bao hieu tabs da~ duoc cho.n */
+.rt03tl-item.rt03selected {
+    -webkit-transform: scale(0.5);
+            transform: scale(0.5);
+}
+
+
+
+
+
+
+
+
+
+
+
+/**
+ * GALLERY DISPLAY LIST
+ */
+.rt03display-list .rt03col {
+    width: 100%;
+    padding-bottom: 10px;
+}
+.rt03display-list .rt03tl-front {
+    padding: 10px;
+}
+.rt03display-list .rt03tl-name {
+    display: inline-block;
+    width: 60%; height: auto;
+    padding: 0;
+    white-space: nowrap;
+}
+.rt03display-list .rt03tl-info {
+    display: inline-block;
+    padding: 0;
+    background-color: transparent;
+    border-top: none;
+    vertical-align: top;
+}
+
+
+
+
+
+
+
+
+
+
+
+/**
+ * CAC ELEMENTS - BUTTON - FORM UI
+ */
+
+/**
+ * COLOR PICKER
+ */
+.rt03picker .wp-picker-container {
+    position: relative;
+    background-color: #fff;
+    z-index: 2;
+}
+.rt03picker .wp-color-result {
+    width: 80px; height: 48px;
+    border: none;
+    box-shadow: inset 0 0 1px hsla(0,0%,0%,.85);
+}
+.rt03picker .wp-color-result:after {
+    display: none;
+}
+.rt03picker .iris-picker .iris-square-inner, .rt03picker .iris-picker .iris-slider {
+    box-shadow: inset 0 0 2px hsla(0,0%,0%,.5);
+}
+
+
+
+
+
+
+
+/**
+ * RUBYBOX
+ */
+.rb01outer {
+}
+.rb01inner {
+    padding: 0;
+    border-radius: 4px;
+}
+
+
+
+
+
+
+/**
+ * INLINE
+ */
+.rt03box-title {
+    padding: 15px 0;
+    margin-top: 0; margin-bottom: 20px;
+    border-bottom: 1px solid #eee;
+    background-color: #f9f9f9;
+    color: #666;
+    font-size: 16px;
+    line-height: 22px;
+    font-weight: 300;
+    text-align: center;
+    letter-spacing: 10px;
+}
+
+
+/* Inline delete */
+#rt03warn-delete {
+    text-align: center;
+}
+#rt03warn-delete .rt03box-title {
+    margin-bottom: 20px;
+}
+
+a.rt03confirm-delete {
+    color: #dd0000;
+    cursor: pointer;
+}
+a.rt03confirm-cancel {
+    color: #aaa;
+    cursor: pointer;
+}
+a.rt03confirm-delete:hover   { border-color: #dd0000; }
+a.rt03confirm-cancel:hover   { border-color: #333; color: #333; }
+#rt03warn-delete .rt03btn-ajax-last {
+    padding-top: 20px; padding-bottom: 20px;
+}
+
+
+
+
+
+
+
+
+/**
+ * CODEMIRROR
+ * Height auto resize bi xay la loi, khong hoat dong tron tru
+ */
+.CodeMirror {
+    height: auto;
+    border: 1px solid #e5e5e5;
+    border-radius: 4px;
+}
+.CodeMirror-scroll {
+    min-height: 250px; /* Chieu cao toi thieu cua Editor */
+}
+
+
+
+
+
+
+
+
+
+/**
+ * TABS LIST
+ */
+.rt03tabs-list .rt01slide {
+    overflow: visible;
+    padding-top: 50px;
+}
+.rt03tabs-list .rt01pagitem {
+    width: 16px; height: 16px;
+    padding: 5px 10px !important;
+    margin-left: 2px; margin-right: 2px;
+    border-radius: 4px;
+}
+.rt03tabs-list .rt01pagitem:hover {
+    background-color: #e5e5e5;
+}
+.rt03tabs-list .rt01pagitem.rt01cur {
+    background-color: #666;
+    color: #fff;
+}
+
+.rt03tabs-list.rt03one-slide .rt01pag {
+    visibility: hidden;
+}
+
+
+
+
+
+
+
+
+/**
+ * TABS MAIN STYLE OTHER
+ */
+
+/* TinyMCE fullscreen */
+/*#fullscreen-topbar {
+    background-color: #fff !important;
+    border-bottom-width: 0 !important;
+}
+#wp-fullscreen-save .button-primary { display: none; }
+#wp-fullscreen-modes .button        { background-color: transparent; box-shadow: none; }
+#wp-fullscreen-modes .button.active { background-color: #999; color: #fff; }
+#wp-fullscreen-close > a:hover      { color: #cc0055; }
+#wp-fullscreen-statusbar            { display: none; }*/
+
+
+
+
+
+
+
+/**
+ * TABS OPTIONS STYLE
+ */
+.rt03pag-options {
+    padding-left: 15px; padding-right: 15px;
+    border: dashed #ddd !important;
+    border-width: 1px 0 !important;
+    overflow: visible;
+}
+.rt03pag-options .rt01pagitem {
+    margin: -1px 5px;
+    padding: 15px !important;
+}
+.rt03pag-options .rt01pagitem:hover { color: #444; }
+.rt03pag-options .rt01pagitem.rt01cur { color: #dd0000;}
+.rt03pag-options .rt01pagitem.rt01cur:before {
+    content: '';
+    display: block;
+    position: absolute;
+    left: -10px; top: -1px;
+    width: 100%; height: 100%;
+    padding: 1px 10px;
+    background-color: #fff;
+    z-index: -1;
+}
+.rt03pag-options .rt01pagitem.rt01cur:after {
+    content: '';
+    display: block;
+    position: absolute;
+    left: 0; top: -1px;
+    width: 100%; height: 100%;
+    border: 1px solid #dd0000;
+    z-index: 2px;
+}
+
+
+
+
+
+
+
+/**
+ * TABS MAIN TRANG THAI DELETE
+ */
+.rt03pagitem-del {
+    display: none;
+    position: absolute;
+    left: -1px; top: -30px;
+    width: 100%;
+    padding-top: 6px; padding-bottom: 6px;
+    border: 1px dotted transparent;
+    border-bottom-color: #cc0055;
+    vertical-align: center;
+}
+.rt03pagitem-del:after {
+    content: '';
+    display: block;
+    width: 16px; height: 16px;
+    margin-left: auto; margin-right: auto;
+    background: url(../imgs/icons/icons-16.png) no-repeat -117px -167px;
+}
+.rt03pagitem-del:hover {
+    border: 1px solid #c00;
+}
+.rt03tw-delete .rt03slide-add {
+    display: none;
+}
+.rt03tw-delete .rt03pagitem-del {
+    display: block;
+}
+.rt03tw-delete .rt01tab .rt01pagitem.rt03selected {
+    top: 50px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/**
+ * TRANG TABS
+ */
+.rt03tabs-info {
+    margin-top: 30px;
+    margin-bottom: 70px;
+}
+.rt03tabs-info > * {
+    vertical-align: middle;
+}
+
+
+/* OPTION : NAME - ID - SLUG */
+input.rt03tabs-name {
+    width: 400px;
+    padding: 10px 15px;
+    margin-bottom: 10px; margin-right: 10px;
+    background-color: #fff;
+    color: #333;
+    font-size: 16px;
+    line-height: 1.5em;
+}
+
+.rt03tabs-shortcode {
+    display: inline-block;
+    padding: 10px 15px;
+    margin-bottom: 10px;
+    background-color: #fff;
+    border-radius: 4px;
+    font-family: Consolas, Monaco, monospace;
+    line-height: 24px;
+}
+
+
+/* Ten cua group */
+.rt03group-name {
+    padding-bottom: 30px;
+    color: #222;
+}
+.rt03group-name > span {
+    min-height: 32px;
+    line-height: 32px;
+}
+
+
+/* CELL */
+.rt03option-name {
+    display: block;
+    margin-bottom: 20px;
+    font-size: 1.2em;
+}
+.rt03option-name-narrow {
+    max-width: 150px;   
+}
+.rt03cell-desc {
+    margin-top: 4px;
+    color: #aaa;
+    font-size: 11px;
+}
+
+
+
+
+
+
+
+/**
+ * PHAN TABS SETTING
+ */
+
+/* Phan tabs option */
+.rt03tabs-options > .rt01pag {
+    margin-bottom: 30px !important;
+}
+.rt03tabs-options > .rt01pag > .rt01paginner > .rt01pagitem {
+    padding-left: 5px; padding-right: 5px;
+    letter-spacing: 1px;
+}
+.rt03tabs-options > .rt01pag > .rt01paginner > .rt01pagitem.rt01first { margin-left: 0; }
+.rt03tabs-options > .rt01pag > .rt01paginner > .rt01pagitem.rt01last  { margin-right: 0; }
+
+.rt03option-item {
+    margin-bottom: 30px;
+}
+
+/* Phan input dom ID - Class */
+input.rt03tabs-dom-id, input.rt03tabs-dom-class {
+    width: 100%;
+    padding: 10px 15px;
+    margin-bottom: 20px;
+    background-color: #f9f9f9;
+    color: #333;
+    border-radius: 4px;
+    font-size: 16px;
+    line-height: 1.5em;
+}
+input.rt03tabs-dom-id:focus, input.rt03tabs-dom-class:focus {
+    background-color: #e5e5e5;
+}
+
+/* Phan style custom */
+.rt03option-styleCustom {
+    margin-top: 30px;
+}
+.rt03auto-styleCustom {
+    display: none;
+}
+
+
+
+
+
+
+
+/**
+ * CONTROL & BUTTON CREATE - UPDATE - DELETE
+ */
+.rt03tabs-btn {
+    display: inline-block;
+    padding: 12px 15px;
+    height: 16px;
+    color: #aaa;
+    font-size: 11px;
+    line-height: 16px;
+    text-decoration: none;
+    vertical-align: top;
+    cursor: pointer;
+}
+.rt03tabs-btn:hover         { color: #222; }
+.rt03tabs-btn:active,
+.rt03tabs-btn.rb01actived   { color: #cc0055; opacity: 1 !important; }
+.rt03tabs-btn i             { margin-right: 8px; }
+
+
+
+/* TABS CONTROL */
+.rt03tabs-control {
+    position: absolute;
+    right: 0; top: 34px;
+    z-index: 2;
+}
+.rt03tabs-control > .rt03tabs-btn                   { padding-left: 15px; padding-right: 15px; }
+.rt03tabs-control > .rt03tabs-btn i                 { margin-right: 0; }
+
+
+
+
+
+
+
+/**
+ * PHAN FOOTER : BUTTON CONTROL
+ */
+.rt03nav-footer {
+    background-color: #fff;
+    border-radius: 4px;
+    z-index: 99;
+}
+.rt03nav-footer:after {
+    content: '';
+    display: table;
+    clear: both;
+}
+.rt03nav-footer > *, .rt03btn-footer > *, .rt03btn-footer-first > * {
+    vertical-align: middle;
+}
+
+
+/* Phan icon footer */
+.rt03i16-new     { background-position: -16px -16px; }
+.rt03i16-update  { background-position: -66px -16px; }
+.rt03i16-delete  { background-position: -116px -16px; }
+.rt03i16-preview { background-position: -166px -16px; }
+
+.rt03btn-footer:hover .rt03i16-new,
+.rt03btn-footer.rt03actived .rt03i16-new     { background-position: -16px -66px; }
+.rt03btn-footer:hover .rt03i16-update,
+.rt03btn-footer.rt03actived .rt03i16-update  { background-position: -66px -66px; }
+
+.rt03btn-footer:hover .rt03i16-delete  { background-position: -116px -66px; }
+.rt03btn-footer:hover .rt03i16-preview { background-position: -166px -66px; }
+
+
+/* Style button */
+.rt03ajax-tabs-new,
+.rt03ajax-tabs-update {
+    color: #0099dd;
+    border-radius: 4px 0 0 4px;
+}
+.rt03btn-tabs-delete    { color: #dd0000; }
+.rt03btn-tabs-preview   { color: #01bb00; }
+
+.rt03ajax-tabs-new:hover, .rt03ajax-tabs-update:hover,
+.rt03ajax-tabs-new.rt03actived, .rt03ajax-tabs-update.rt03actived {
+    background-color: #0099dd;
+    color: #fff;
+}
+.rt03btn-tabs-delete:hover  { background-color: #dd0000; color: #fff; }
+.rt03btn-tabs-preview:hover { background-color: #01bb00; color: #fff; }
+
+.rt03nav-footer [class*='rt03i16'] {
+    margin-right: 5px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/**
+ * TRANG SLIDE
+ */
+.rt03auto-title, .rt03auto-content {
+    display: none;
+}
+
+
+/**
+ * PHAN SLIDE LIST
+ */
+.rt03slide-list {
+    margin-top: 30px;
+    margin-bottom: 60px;
+}
+.rt03slide-list > * {
+    vertical-align: top;
+}
+
+
+/**
+ * SLIDE ITEM
+ */
+.rt03sl-item {
+    position: relative;
+    float: left;
+    width: 150px;
+    margin-bottom: 10px; margin-right: 10px;
+}
+.rt03sl-front {
+    overflow: hidden;
+    position: relative;
+    width: 100%;
+    background-color: #fff;
+    border: 1px solid #aaa;
+    border-radius: 4px;
+    z-index: 2;
+}
+.rt03sl-name {
+    overflow: hidden;
+    display: block;
+    height: 51px;
+    margin: 10px 15px ; /* Thay the padding: de co' chuc nang 'text-overflow' */
+    color: #444;
+    font-size: 18px;
+    line-height: 1.4em;
+    font-weight: 300;
+    text-overflow: ellipsis;
+    cursor: pointer;
+}
+.rt03sl-info {
+    background-color: #f5f5f5;
+    font-size: 11px;
+    color: #ccc;
+}
+.rt03sl-info:after {
+    content: '';
+    display: table;
+    clear: both;
+}
+
+.rt03sl-id {
+    display: block;
+    float: left;
+    padding: 5px 10px;
+    margin-right: 4px;
+}
+
+.rt03sl-item:hover .rt03sl-front,
+.rt03sl-item:hover .rt03sl-back     { border-color: #cc0055; }
+.rt03sl-item:hover .rt03sl-info     { background-color: #e5e5e5; color: #333; }
+.rt03sl-item:hover .rt03sl-id       { border-right-color: #777; }
+
+.rt03sl-item.rt03cur .rt03sl-front  { border-color: #cc0055; }
+.rt03sl-item.rt03cur .rt03sl-name   { color: #cc0055; }
+.rt03sl-item.rt03cur .rt03sl-info   { background-color: #cc0055; color: #fff; }
+.rt03sl-item.rt03cur .rt03sl-id     { border-right-color: #fff; }
+
+.rt03sl-item.rt03actived-more { z-index: 2; }
+.rt03sl-item.rs20cur          { z-index: 99; }
+
+
+
+/**
+ * BUTTON TREN SLIDE INFO
+ */
+.rt03sl-drag, .rt03sl-more {
+    display: block;
+    float: right;
+    padding: 5px 15px;
+}
+.rt03sl-more {
+    cursor: pointer;
+}
+.rt03sl-drag {
+    cursor: move;
+}
+
+.rt03sl-more > *, .rt03sl-drag > * {
+    display: block;
+    opacity: .3;
+}
+.rt03sl-more:hover > *, .rt03sl-more.rt03actived > *,
+.rt03sl-drag:hover > *, .rt03sl-drag.rt03actived > * {
+    opacity: 1;
+}
+
+.rt03i16-more { background-position: -216px -16px; }
+.rt03i16-drag { background-position: -266px -16px; }
+.rt03sl-item.rt03cur .rt03i16-more { background-position: -216px -66px; }
+.rt03sl-item.rt03cur .rt03i16-drag { background-position: -266px -66px; }
+
+
+
+/**
+ * CAC THANH PHAN KHAC TREN SLIDE ITEM
+ */
+.rt03sl-back {
+    overflow: hidden;
+    visibility: hidden;
+    position: absolute;
+    left: 0; top: 100%;
+    width: 100%;
+    background-color: #fff;
+    border: solid #aaa;
+    border-width: 0 1px 1px 1px;
+    border-radius: 0 0 4px 4px;
+    opacity: 0;
+    z-index: 1;
+    -webkit-transform: translateY(-100%);
+            transform: translateY(-100%);
+    
+    -webkit-transition: -webkit-transform .2s, opacity .2s;
+            transition:         transform .2s, opacity .2s;
+}
+.rt03sl-back:after {
+    content: '';
+    display: table;
+    clear: both;
+}
+.rt03sl-item.rt03cur .rt03sl-back {
+    border-color: #cc0055;
+}
+
+.rt03sl-duplicate, .rt03sl-delete {
+    display: block;
+    float: left;
+    padding: 6px 0;
+    width: 50%;
+    color: #666;
+    font-size: 11px;
+    line-height: 1.4em;
+    text-align: center;
+    cursor: pointer;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+}
+.rt03sl-duplicate:hover {
+    background-color: #0099dd;
+    color: #fff;
+}
+.rt03sl-delete:hover {
+    background-color: #dd0000;
+    color: #fff;
+}
+
+/* Slide more actived */
+.rt03sl-item.rt03actived-more .rt03sl-front {
+    overflow: visible;
+    border-bottom: none;
+    border-radius: 4px 4px 0 0;
+}
+.rt03sl-item.rt03actived-more .rt03sl-back {
+    visibility: visible;
+    opacity: 1;
+    -webkit-transform: translateY(0px);
+            transform: translateY(0px);
+}
+
+
+
+
+
+
+
+
+
+
+/**
+ * TAO SLIDE MOI
+ */
+.rt03sl-new {
+    position: relative;
+    display: inline-block;
+    width: 150px; height: 100px;
+    margin-bottom: 10px; margin-right: 10px;
+    border: 1px dashed #999;
+    border-radius: 4px;
+    font-size: .85em;
+    cursor: pointer;
+    -webkit-transition: -webkit-transform .2s;
+            transition:         transform .2s;
+}
+.rt03sl-new-content {
+    position: absolute;
+    top: 50%;
+    width: 100%;
+    text-align: center;
+
+    -webkit-transform: translateY(-50%);
+            transform: translateY(-50%);
+}
+.rt03sl-plus {
+    display: block;
+    position: relative;
+    left: 50%;
+    width: 31px; height: 31px;
+    margin-left: -16px; margin-bottom: 5px;
+}
+.rt03sl-plus:before, .rt03sl-plus:after {
+    content: '';
+    display: block;
+    position: absolute;
+    background-color: #999;
+}
+.rt03sl-plus:before {
+    width: 31px; height: 1px;
+    left: 0; top: 50%;
+}
+.rt03sl-plus:after {
+    width: 1px; height: 31px;
+    left: 50%; top: 0;
+}
+
+.rt03sl-new:hover {
+    border-color: #cc0055;
+    color: #cc0055;
+}
+.rt03sl-new:hover .rt03sl-plus:before, .rt03sl-new:hover .rt03sl-plus:after {
+    background-color: #cc0055;
+}
+
+/* Drag item actived */
+.rs20dragging .rt03sl-new {
+    -webkit-transform: scale(.01);
+            transform: scale(.01);
+}
+
+
+
+
+
+
+/*
+ * PHAN SLIDE SETTING
+ */
+
+/* Phan tieu de cua slide */
+textarea.rt03se-editor-title {
+    width: 100%;
+    padding: 10px 15px;
+    background-color: #f9f9f9;
+    border: none;
+    border-radius: 4px;
+    box-shadow: none;
+    font-size: 16px;
+    line-height: 1.5em;
+}
+textarea.rt03se-editor-title:focus {
+    background-color: #e5e5e5;
+}
+
+
+/* Cac phan khac */
+.rt03se-rowspace {
+    width: 100%; height: 1px;
+    margin-top: 50px; margin-bottom: 50px;
+    border-bottom: 1px dashed #ddd;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/**
+ * BOX STYLE
+ */
+
+/* Button close cua Box */
+.rt03box-close {
+    width: auto; height: auto;
+    padding: 2px 20px;
+    background: none;
+    opacity: 1;
+}
+.rt03box-close .rt03icon {
+    content: '';
+    display: block;
+    width: 48px; height: 48px;
+    background: url(../imgs/icon-other.svg) no-repeat -51px -1px;
+
+    -webkit-transition: -webkit-transform .1s;
+            transition:         transform .1s;
+    -webkit-transform: scale(.6);
+            transform: scale(.6);
+}
+
+.rt03box-close:hover {
+    opacity: 1;
+}
+.rt03box-close:hover .rt03icon {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+}
+
+
+
+
+
+
+
+
+
+/**
+ * TABS PREVIEW
+ */
+.rt03preview {
+    max-width: 940px;
+    margin-left: auto; margin-right: auto;
+    padding: 20px;
+}
+.rt03preview, .rt03preview p {
+    color: #333;
+    font-family: "Noto Serif", serif;
+    font-weight: 400;
+    font-size: 17px;
+    line-height: 1.6em;
+    vertical-align: baseline;
+}
+
+.rt03tabs-preview {
+    visibility: hidden;
+}
+.rt03tabs-preview.rt01ready {
+    visibility: visible;
+}
+
+
+
+
+
+
+
+
+
+
+/**
+ * BOX DONATE
+ */
+.rt03donate {
+    text-align: center;
+}
+.rt03donate-js, .rt03donate-paypal {
+    float: left;
+    width: 50%;
+    padding: 0 20px;
+    margin-bottom: 30px;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+}
+.rt03donate-title {
+    color: #444;
+    font-size: 28px;
+    font-weight: 300;
+    line-height: 1.4em;
+}
+.rt03donate-thumb {
+    display: block;
+    width: 100%; height: auto;
+}
+.rt03donate-footer {
+    float: left;
+    width: 100%;
+    padding: 20px 0;
+    color: #ccc;
+    font-size: 14px;
+    font-weight: 300;
+    letter-spacing: 5px;
+}
+
+@media only screen and (max-width: 499px) {
+    .rt03donate-js, .rt03donate-paypal {
+        width: 100%;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/**
+ * MESSAGE - THONG BAO
+ */
+.rt03message {
+    padding: 25px;
+    margin-bottom: 50px;
+    
+    color: #fff;
+    font-size: 1.6em;
+    line-height: 1em;
+}
+.rt03message-success {
+    background-color: #0cf;
+}
+.rt03message-error {
+    background-color: red;
+}
+
+
+
+
+
+
+
+/**
+ * IMPORT & EXPORT DATA
+ */
+.rt03part-imex {
+    display: none;
+}
+.rt03part-name {
+    padding-left: 10px;
+    border-left: 1px dotted #999;
+    color: #222;
+    font-weight: 300;
+}
+
+/* HIEN CAC THANH PHAN */
+.rt03actived-imex .rt03part-imex,
+.rt03actived-imex .rt03tl-select {
+    display: block;
+}
+
+/* AN CAC BUTTON KHONG CAN THIET */
+.rt03actived-imex .rt03control-delete {
+    visibility: hidden;
+}
+
+
+/* IMPORT */
+.rt03import {
+    margin-bottom: 50px;
+    border: 1px dashed #ddd;
+    text-align: center;
+}
+.rt03import-inner {
+    padding-top: 40px;
+    margin: 10px;
+    background-color: #f5f5f5;
+    /*border: 1px solid #ddd;*/
+}
+.rt03import-input-file { display: none; }
+.rt03import-output {
+    padding-top: 20px; padding-bottom: 10px;
+    color: #aaa;
+    font-family: Consolas, Monaco, monospace;
+    font-size: 12px;
+}
+
+/* BUTTON UPLOAD */
+.rt03import-upload .rt03btn2-last  { top: auto; }
+.rt03import-upload.rt03deactived   { opacity: .2; }
+.rt03import-upload.rt03deactived .rt03btn2-first {
+    border-color: transparent !important;
+    cursor: auto;
+}
+
+/* DRAG DROP ACTIVE */
+.rt03import.rt03actived-drop                        { border-color: #666; }
+.rt03import.rt03actived-drop .rt03import-inner      { background-color: #eee; }
+
+/* FILE SELECTED */
+.rt03import.rt03selected-file                       { border-color: #cc0055; }
+.rt03import.rt03selected-file .rt03import-inner     { background-color: rgba(46,162,204,.1); }
+
+
+/* EXPORT */
+.rt03export {
+    margin-bottom: 20px;
+}
+.rt03export .rt03part-name {
+    display: inline-block;
+    margin-right: 50px;
+}
+.rt03export-control                     { float: right; }
+.rt03export-control .rf01btn            { margin-left: 10px; margin-right: 0; }
+
+.rt03export-download                    { display: inline-block; }
+.rt03export-submit                      { display: none; }
+.rt03export-download-btn {
+    border-color: #dd0000 !important;
+    color: #dd0000 !important;
+}
+.rt03export-download-btn.rt03deactived {
+    opacity: .2;
+    cursor: auto;
+}
+
+.rt03actived-imex .rt03tl-select:after {
+    border: 1px solid #cc0055;
+    background: #fff url(../imgs/icons/icons-16.png) no-repeat -213px -163px;
+}
+
+
+
+/* TRANG OPTIONS */
+#rt03import-field, #rt03export-field {
+    color: #999;
+    font-family: monospace;
+    font-size: 8pt;
+    line-height: 1.6em;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/**
+ * NHUNG THANH PHAN KHAC
+ */
+
+/**
+ * CHUYEN DOI GUI 'PAGE NEW' - 'PAGE EDIT'
+ */
+.rt03page-create .rt03tabs-shortcode,
+.rt03page-create .rt03ajax-tabs-update, .rt03page-create .rt03btn-tabs-delete {
+    display: none;
+}
+
+.rt03page-edit .rt03ajax-tabs-new {
+    display: none;
+}
+
+
+
+
+
+
+
+/**
+ * DONG BANG EDITOR TABS + SLIDE
+ */
+#rt03editor-tabs.rt03deactived, #rt03page-slide.rt03deactived {
+    opacity: .25;
+}
+/* Ngan chan nhung hanh dong tren trang deactived */
+#rt03editor-tabs.rt03deactived:after, #rt03page-slide.rt03deactived:after {
+    content: '';
+    display: block;
+    position: absolute;
+    left: 0; top: 0;
+    width: 100%; height: 100%;
+    z-index: 3;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/**
+ * UI FALLBACK TREN WP CU
+ */
+.rt03ui-fallback .rt03nav-alltabs,
+.rt03ui-fallback .rt03nav-footer {
+    background-color: #f5f5f5;
+}
+.rt03ui-fallback .rt03tabs-name,
+.rt03ui-fallback .rt03tabs-shortcode {
+    background-color: #f5f5f5;
+}
+
+.rt03ui-fallback .rt03flatbox > .rt01pag .rt01pagitem.rt01cur {
+    background-color: #f5f5f5;
+    border: solid #ddd;
+    border-width: 1px 1px 0 1px;
+}
+.rt03ui-fallback .rt03flatbox > .rt01viewport {
+    border: 1px solid #ddd;
+}

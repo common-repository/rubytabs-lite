@@ -1,0 +1,11 @@
+/* LOGO MENU */
+#toplevel_page_rubytabs-lite .wp-menu-image > img   { padding-top: 7px; }
+
+.rt03ui-fallback #toplevel_page_rubytabs-lite .wp-menu-image        { padding-right: 4px; }
+.rt03ui-fallback #toplevel_page_rubytabs-lite .wp-menu-image > img  { padding-top: 3px; }
+
+
+/* ICON RUBYTABS ON TINYMCE + WIDGET */
+i.rt03icon-rubytabs-lite,
+.widget-icon.rt03icon-rubytabs-lite     { background-image: url(../imgs/icon-ruby-dark.svg); }
+i.rt03icon-rubytabs-lite ~ span         { padding-left: 0; }
